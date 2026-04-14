@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  *
  * @author u07862281136
  */
-public class jDlgLab_Usuarios extends javax.swing.JDialog {
+public class JDlgLab_Usuarios extends javax.swing.JDialog {
 
     /**
      * Creates new form jDlgLab_Usuarios
      */
-    public jDlgLab_Usuarios(java.awt.Frame parent, boolean modal) {
+    public JDlgLab_Usuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setTitle("Cadastro de Usuários");
@@ -287,20 +287,21 @@ public class jDlgLab_Usuarios extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(jDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(jDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(jDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(jDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JDlgLab_Usuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                jDlgLab_Usuarios dialog = new jDlgLab_Usuarios(new javax.swing.JFrame(), true);
+                JDlgLab_Usuarios dialog = new JDlgLab_Usuarios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
