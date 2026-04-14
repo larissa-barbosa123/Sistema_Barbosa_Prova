@@ -252,12 +252,13 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
 
     private void jBtnPesqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesqActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Entre com a chave primária:");
+        JOptionPane.showInputDialog(null, "Informe o código do usuário:");
     }//GEN-LAST:event_jBtnPesqActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showConfirmDialog(null, "Confirma exclusão?", "Selecione uma opção", JOptionPane.YES_NO_OPTION);    
+        JOptionPane.showConfirmDialog(null, "A exclusão não poderá ser desfeita. Deseja continuar?",
+                "Excluir registro", JOptionPane.YES_NO_OPTION);    
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
