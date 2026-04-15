@@ -359,7 +359,7 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
 
     private void jBtnLab_PesqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_PesqActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Informe o código do usuário:");
+        JOptionPane.showInputDialog(null, "Informe o código do Cliente:");
     }//GEN-LAST:event_jBtnLab_PesqActionPerformed
 
     private void jChbLab_ativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChbLab_ativoActionPerformed

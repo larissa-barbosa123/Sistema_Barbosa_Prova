@@ -18,7 +18,7 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
     public JDlgLab_Fornecedor(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setTitle("Cadastro de Fornecedores");
+        setTitle("Fornecedores");
         setLocationRelativeTo(null);
         habilitar(false);
     }
@@ -363,7 +363,7 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
 
     private void jBtnLab_PesqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_PesqActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showInputDialog(null, "Informe o código do usuário:");
+        JOptionPane.showInputDialog(null, "Informe o código do Fornecedor:");
     }//GEN-LAST:event_jBtnLab_PesqActionPerformed
 
     private void jBtnLab_Incluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_Incluir1ActionPerformed

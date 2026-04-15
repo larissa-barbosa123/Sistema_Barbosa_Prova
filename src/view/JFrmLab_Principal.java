@@ -95,6 +95,11 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Produtos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLab_Produtos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
         jMnuLab_Produtos.setText("Produtos");
+        jMnuLab_Produtos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuLab_ProdutosActionPerformed(evt);
+            }
+        });
         jMnuLab_Cadastros.add(jMnuLab_Produtos);
 
         jMnuLab_Vendedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -162,21 +167,27 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
 
     private void jMnuLab_UsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_UsuariosActionPerformed
         // TODO add your handling code here:
-        JDlgLab_Usuarios jDlgLab_Usuarios = new JDlgLab_Usuarios(null, true);
+       JDlgLab_Usuarios jDlgLab_Usuarios = new JDlgLab_Usuarios(null, true);
        jDlgLab_Usuarios.setVisible(true);
     }//GEN-LAST:event_jMnuLab_UsuariosActionPerformed
 
     private void jMnuLab_ClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_ClientesActionPerformed
         // TODO add your handling code here:
-         JDlgLab_Clientes jDlgLab_Clientes = new JDlgLab_Clientes(null, true);
+          JDlgLab_Clientes jDlgLab_Clientes = new JDlgLab_Clientes(null, true);
        jDlgLab_Clientes.setVisible(true);
     }//GEN-LAST:event_jMnuLab_ClientesActionPerformed
 
     private void jMnuLab_FornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_FornecedorActionPerformed
         // TODO add your handling code here:
          JDlgLab_Fornecedor jDlgLab_Fornecedor = new JDlgLab_Fornecedor(null, true);
-     jDlgLab_Fornecedor.setVisible(true);
+       jDlgLab_Fornecedor.setVisible(true);
     }//GEN-LAST:event_jMnuLab_FornecedorActionPerformed
+
+    private void jMnuLab_ProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_ProdutosActionPerformed
+        // TODO add your handling code here:
+         JDlgLab_Produtos jDlgLab_Produtos = new JDlgLab_Produtos(null, true);
+       jDlgLab_Produtos.setVisible(true);
+    }//GEN-LAST:event_jMnuLab_ProdutosActionPerformed
 
     /**
      * @param args the command line arguments
