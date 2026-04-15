@@ -29,34 +29,34 @@
                   <Group type="102" attributes="0">
                       <Component id="jLabel1" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtCodigo" min="-2" pref="193" max="-2" attributes="0"/>
+                      <Component id="jTxtLab_Codigo" min="-2" pref="193" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="47" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTxtNome" max="32767" attributes="0"/>
+                      <Component id="jTxtLab_Nome" max="32767" attributes="0"/>
                       <EmptySpace min="32" pref="32" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jBtnIncluir" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Incluir" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jBtnAlterar" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Alterar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jBtnExcluir" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Excluir" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jBtnConfirmar" min="-2" pref="120" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Confirmar" min="-2" pref="120" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jBtnCancelar" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Cancelar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jBtnPesq" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBtnLab_Pesq" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                              <Component id="jCboNivel" min="-2" pref="193" max="-2" attributes="0"/>
+                              <Component id="jCboLab_nivel" min="-2" pref="193" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jChbAtivo" min="-2" pref="76" max="-2" attributes="0"/>
+                              <Component id="jChbLab_ativo" min="-2" pref="76" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="45" max="32767" attributes="0"/>
@@ -66,20 +66,20 @@
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jFmtDataNascimento" min="-2" pref="130" max="-2" attributes="0"/>
+                              <Component id="jFmtLab_dataNascimento" min="-2" pref="130" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jPwfSenha" max="32767" attributes="0"/>
+                              <Component id="jPwfLab_senha" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="jLabel3" min="-2" pref="47" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTxtApelido" min="-2" pref="193" max="-2" attributes="0"/>
+                              <Component id="jTxtLab_apelido" min="-2" pref="193" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jLabel4" min="-2" pref="34" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jFmtCPF" max="32767" attributes="0"/>
+                              <Component id="jFmtLab_CPF" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -95,39 +95,39 @@
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel1" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="jTxtCodigo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtLab_Codigo" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jTxtNome" max="32767" attributes="0"/>
+                  <Component id="jTxtLab_Nome" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtApelido" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLab_apelido" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFmtCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtLab_CPF" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jFmtDataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jPwfSenha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtLab_dataNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jPwfLab_senha" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jChbAtivo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jChbLab_ativo" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jCboNivel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboLab_nivel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="54" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnIncluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnExcluir" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnConfirmar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="jBtnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnPesq" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Incluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Alterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Excluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Confirmar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Pesq" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
           </Group>
@@ -140,7 +140,7 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtCodigo">
+    <Component class="javax.swing.JTextField" name="jTxtLab_Codigo">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
@@ -152,11 +152,11 @@
         <Property name="text" type="java.lang.String" value="Apelido:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtNome">
+    <Component class="javax.swing.JTextField" name="jTxtLab_Nome">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtApelido">
+    <Component class="javax.swing.JTextField" name="jTxtLab_apelido">
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnIncluir">
+    <Component class="javax.swing.JButton" name="jBtnLab_Incluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/incluir.png"/>
@@ -164,10 +164,10 @@
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIncluirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_IncluirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnAlterar">
+    <Component class="javax.swing.JButton" name="jBtnLab_Alterar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/alterar.png"/>
@@ -175,10 +175,10 @@
         <Property name="text" type="java.lang.String" value="Alterar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnAlterarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_AlterarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnExcluir">
+    <Component class="javax.swing.JButton" name="jBtnLab_Excluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/Excluir.png"/>
@@ -186,10 +186,10 @@
         <Property name="text" type="java.lang.String" value="Excluir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnExcluirActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_ExcluirActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnConfirmar">
+    <Component class="javax.swing.JButton" name="jBtnLab_Confirmar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/ok.png"/>
@@ -197,10 +197,10 @@
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnConfirmarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_ConfirmarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnCancelar">
+    <Component class="javax.swing.JButton" name="jBtnLab_Cancelar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/cancelar.png"/>
@@ -208,10 +208,10 @@
         <Property name="text" type="java.lang.String" value="Cancelar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnCancelarActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_CancelarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnPesq">
+    <Component class="javax.swing.JButton" name="jBtnLab_Pesq">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/pesquisar.png"/>
@@ -219,7 +219,7 @@
         <Property name="text" type="java.lang.String" value="Pesquisar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnPesqActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_PesqActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
@@ -232,7 +232,7 @@
         <Property name="text" type="java.lang.String" value="Data de Nascimento:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtDataNascimento">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtLab_dataNascimento">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -244,12 +244,12 @@
         <Property name="text" type="java.lang.String" value="N&#xed;vel:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jChbAtivo">
+    <Component class="javax.swing.JCheckBox" name="jChbLab_ativo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jCboNivel">
+    <Component class="javax.swing.JComboBox" name="jCboLab_nivel">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -264,9 +264,9 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JFormattedTextField" name="jFmtCPF">
+    <Component class="javax.swing.JFormattedTextField" name="jFmtLab_CPF">
     </Component>
-    <Component class="javax.swing.JPasswordField" name="jPwfSenha">
+    <Component class="javax.swing.JPasswordField" name="jPwfLab_senha">
       <Properties>
         <Property name="text" type="java.lang.String" value="jPasswordField1"/>
       </Properties>

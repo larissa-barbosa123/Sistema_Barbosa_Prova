@@ -75,6 +75,11 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Clientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLab_Clientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cliente.png"))); // NOI18N
         jMnuLab_Clientes.setText("Clientes");
+        jMnuLab_Clientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuLab_ClientesActionPerformed(evt);
+            }
+        });
         jMnuLab_Cadastros.add(jMnuLab_Clientes);
 
         jMnuLab_Fornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -155,6 +160,12 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         JDlgLab_Usuarios jDlgLab_Usuarios = new JDlgLab_Usuarios(null, true);
        jDlgLab_Usuarios.setVisible(true);
     }//GEN-LAST:event_jMnuLab_UsuariosActionPerformed
+
+    private void jMnuLab_ClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_ClientesActionPerformed
+        // TODO add your handling code here:
+         JDlgLab_Clientes jDlgLab_Clientes = new JDlgLab_Clientes(null, true);
+       jDlgLab_Clientes.setVisible(true);
+    }//GEN-LAST:event_jMnuLab_ClientesActionPerformed
 
     /**
      * @param args the command line arguments
