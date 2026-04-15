@@ -79,7 +79,7 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
 
         jLabel3.setText("Apelido:");
 
-        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
         jBtnLab_Incluir.setText("Incluir");
         jBtnLab_Incluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +95,7 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnLab_Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnLab_Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/excluir2.png"))); // NOI18N
         jBtnLab_Excluir.setText("Excluir");
         jBtnLab_Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +103,7 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnLab_Confirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ok.png"))); // NOI18N
+        jBtnLab_Confirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/aprovado.png"))); // NOI18N
         jBtnLab_Confirmar.setText("Confirmar");
         jBtnLab_Confirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +111,7 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnLab_Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnLab_Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/recarregar.png"))); // NOI18N
         jBtnLab_Cancelar.setText("Cancelar");
         jBtnLab_Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class JDlgLab_Usuarios extends javax.swing.JDialog {
             }
         });
 
-        jBtnLab_Pesq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnLab_Pesq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/lupa.png"))); // NOI18N
         jBtnLab_Pesq.setText("Pesquisar");
         jBtnLab_Pesq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

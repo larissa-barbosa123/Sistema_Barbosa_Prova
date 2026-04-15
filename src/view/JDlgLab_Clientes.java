@@ -30,7 +30,7 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
         jFmtLab_dataCadastro.setEnabled(valor);
         jFmtLab_dataNascimento.setEnabled(valor);
         jChbLab_ativo.setEnabled(valor);
-        jTxtLab_CPF.setEnabled(valor);
+        jFmtLab_CPF.setEnabled(valor);
         jTxtLab_Celular.setEnabled(valor);
         jTxtLab_bairro.setEnabled(valor);
         jTxtLab_cidade.setEnabled(valor);
@@ -74,7 +74,6 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
         jLabel14 = new javax.swing.JLabel();
         jChbLab_ativo = new javax.swing.JCheckBox();
         jTxtLab_Nome = new javax.swing.JTextField();
-        jTxtLab_CPF = new javax.swing.JTextField();
         jFmtLab_dataNascimento = new javax.swing.JFormattedTextField();
         jTxtLab_email = new javax.swing.JTextField();
         jTxtLab_endereco = new javax.swing.JTextField();
@@ -91,6 +90,7 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
         jBtnLab_Pesq = new javax.swing.JButton();
         jFmtLab_cep = new javax.swing.JFormattedTextField();
         jTxtLab_Celular = new javax.swing.JTextField();
+        jFmtLab_CPF = new javax.swing.JFormattedTextField();
 
         jLabel12.setText("jLabel12");
 
@@ -205,19 +205,19 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addComponent(jLabel7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jFmtLab_dataNascimento))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(25, 25, 25)
-                                        .addComponent(jTxtLab_CPF))
+                                        .addComponent(jFmtLab_dataNascimento, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                         .addComponent(jLabel1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jTxtLab_idCodigo))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(jLabel2)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel2)
+                                            .addComponent(jLabel4))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTxtLab_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTxtLab_Nome, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                                            .addComponent(jFmtLab_CPF))))
                                 .addComponent(jTxtLab_email, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
@@ -283,12 +283,11 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
                     .addComponent(jLabel3)
                     .addComponent(jTxtLab_numero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTxtLab_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel4)
-                        .addComponent(jLabel5)
-                        .addComponent(jTxtLab_bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jTxtLab_bairro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtLab_CPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
@@ -329,7 +328,6 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
 
     private void jBtnLab_IncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_IncluirActionPerformed
         // TODO add your handling code here:
-        habilitar(true);
         habilitar(true);
     }//GEN-LAST:event_jBtnLab_IncluirActionPerformed
 
@@ -419,6 +417,7 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
     private javax.swing.JButton jBtnLab_Incluir;
     private javax.swing.JButton jBtnLab_Pesq;
     private javax.swing.JCheckBox jChbLab_ativo;
+    private javax.swing.JFormattedTextField jFmtLab_CPF;
     private javax.swing.JFormattedTextField jFmtLab_cep;
     private javax.swing.JFormattedTextField jFmtLab_dataCadastro;
     private javax.swing.JFormattedTextField jFmtLab_dataNascimento;
@@ -437,7 +436,6 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTxtLab_CPF;
     private javax.swing.JTextField jTxtLab_Celular;
     private javax.swing.JTextField jTxtLab_Nome;
     private javax.swing.JTextField jTxtLab_bairro;

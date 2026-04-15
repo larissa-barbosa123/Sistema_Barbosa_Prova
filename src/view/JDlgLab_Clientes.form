@@ -61,12 +61,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jFmtLab_dataNascimento" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_CPF" max="32767" attributes="0"/>
+                                      <Component id="jFmtLab_dataNascimento" pref="180" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -74,9 +69,15 @@
                                       <Component id="jTxtLab_idCodigo" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_Nome" min="-2" pref="248" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jTxtLab_Nome" pref="248" max="32767" attributes="0"/>
+                                          <Component id="jFmtLab_CPF" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                               <Component id="jTxtLab_email" alignment="1" min="-2" pref="235" max="-2" attributes="0"/>
@@ -165,13 +166,11 @@
                   <Component id="jTxtLab_numero" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jTxtLab_CPF" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTxtLab_bairro" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtLab_bairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jFmtLab_CPF" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -294,8 +293,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtLab_Nome">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtLab_CPF">
-    </Component>
     <Component class="javax.swing.JFormattedTextField" name="jFmtLab_dataNascimento">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtLab_email">
@@ -381,6 +378,8 @@
     <Component class="javax.swing.JFormattedTextField" name="jFmtLab_cep">
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtLab_Celular">
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="jFmtLab_CPF">
     </Component>
   </SubComponents>
 </Form>

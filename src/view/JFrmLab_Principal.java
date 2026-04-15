@@ -85,6 +85,11 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Fornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLab_Fornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fornecedor.png"))); // NOI18N
         jMnuLab_Fornecedor.setText("Fornecedor");
+        jMnuLab_Fornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuLab_FornecedorActionPerformed(evt);
+            }
+        });
         jMnuLab_Cadastros.add(jMnuLab_Fornecedor);
 
         jMnuLab_Produtos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_DOWN_MASK));
@@ -166,6 +171,12 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
          JDlgLab_Clientes jDlgLab_Clientes = new JDlgLab_Clientes(null, true);
        jDlgLab_Clientes.setVisible(true);
     }//GEN-LAST:event_jMnuLab_ClientesActionPerformed
+
+    private void jMnuLab_FornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_FornecedorActionPerformed
+        // TODO add your handling code here:
+         JDlgLab_Fornecedor jDlgLab_Fornecedor = new JDlgLab_Fornecedor(null, true);
+     jDlgLab_Fornecedor.setVisible(true);
+    }//GEN-LAST:event_jMnuLab_FornecedorActionPerformed
 
     /**
      * @param args the command line arguments
