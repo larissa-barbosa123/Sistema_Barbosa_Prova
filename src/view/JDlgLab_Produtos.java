@@ -46,7 +46,6 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBtnLab_Incluir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTxtLab_Codigo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -58,20 +57,12 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
         jLabel5 = new javax.swing.JLabel();
         jTxtLab_preco = new javax.swing.JTextField();
         jChbLab_Ativo = new javax.swing.JCheckBox();
-        jBtnLab_Incluir1 = new javax.swing.JButton();
+        jBtnLab_Incluir = new javax.swing.JButton();
         jBtnLab_Alterar = new javax.swing.JButton();
         jBtnLab_Excluir = new javax.swing.JButton();
         jBtnLab_Confirmar = new javax.swing.JButton();
         jBtnLab_Cancelar = new javax.swing.JButton();
         jBtnLab_Pesq = new javax.swing.JButton();
-
-        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
-        jBtnLab_Incluir.setText("Incluir");
-        jBtnLab_Incluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnLab_IncluirActionPerformed(evt);
-            }
-        });
 
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -93,11 +84,11 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
 
         jChbLab_Ativo.setText("Ativo");
 
-        jBtnLab_Incluir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
-        jBtnLab_Incluir1.setText("Incluir");
-        jBtnLab_Incluir1.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
+        jBtnLab_Incluir.setText("Incluir");
+        jBtnLab_Incluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnLab_Incluir1ActionPerformed(evt);
+                jBtnLab_IncluirActionPerformed(evt);
             }
         });
 
@@ -177,7 +168,7 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
                                 .addComponent(jChbLab_Ativo)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnLab_Incluir1)
+                        .addComponent(jBtnLab_Incluir)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnLab_Alterar)
                         .addGap(18, 18, 18)
@@ -218,7 +209,7 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
                         .addComponent(jChbLab_Ativo)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnLab_Incluir1)
+                    .addComponent(jBtnLab_Incluir)
                     .addComponent(jBtnLab_Alterar)
                     .addComponent(jBtnLab_Excluir)
                     .addComponent(jBtnLab_Confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -242,11 +233,6 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
         // TODO add your handling code here:
         habilitar(true);
     }//GEN-LAST:event_jBtnLab_IncluirActionPerformed
-
-    private void jBtnLab_Incluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_Incluir1ActionPerformed
-        // TODO add your handling code here:
-        habilitar(true);
-    }//GEN-LAST:event_jBtnLab_Incluir1ActionPerformed
 
     private void jBtnLab_AlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_AlterarActionPerformed
         // TODO add your handling code here:
@@ -298,7 +284,6 @@ public class JDlgLab_Produtos extends java.awt.Dialog {
     private javax.swing.JButton jBtnLab_Confirmar;
     private javax.swing.JButton jBtnLab_Excluir;
     private javax.swing.JButton jBtnLab_Incluir;
-    private javax.swing.JButton jBtnLab_Incluir1;
     private javax.swing.JButton jBtnLab_Pesq;
     private javax.swing.JComboBox<String> jCboLab_tamanho;
     private javax.swing.JCheckBox jChbLab_Ativo;
