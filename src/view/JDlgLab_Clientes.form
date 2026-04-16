@@ -89,7 +89,7 @@
                               <Component id="jTxtLab_Celular" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="81" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -104,24 +104,18 @@
                                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jTxtLab_endereco" min="-2" pref="242" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="jFmtLab_cep" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_estado" min="-2" pref="242" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_cidade" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_numero" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
-                                      <Component id="jTxtLab_bairro" alignment="0" min="-2" pref="242" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jTxtLab_cidade" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTxtLab_endereco" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jTxtLab_numero" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTxtLab_bairro" max="32767" attributes="0"/>
+                                  <Component id="jFmtLab_cep" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jTxtLab_estado" alignment="1" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="jChbLab_ativo" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jBtnLab_Incluir" min="-2" max="-2" attributes="0"/>
@@ -135,9 +129,10 @@
                       <Component id="jBtnLab_Cancelar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jBtnLab_Pesq" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="199" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="99" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

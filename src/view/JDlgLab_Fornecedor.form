@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.2" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.DialogFormInfo">
-  <NonVisualComponents>
-    <Component class="javax.swing.JButton" name="jBtnLab_Incluir">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/imagens/botao-adicionar.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Incluir"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_IncluirActionPerformed"/>
-      </Events>
-    </Component>
-  </NonVisualComponents>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
@@ -104,7 +91,8 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jBtnLab_Incluir1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="jBtnLab_Incluir" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jBtnLab_Alterar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -129,7 +117,6 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="jTxtLab_telefoneContato" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="50" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
@@ -161,9 +148,9 @@
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -196,12 +183,12 @@
               </Group>
               <EmptySpace pref="41" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnLab_Incluir1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnLab_Alterar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnLab_Excluir" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnLab_Confirmar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   <Component id="jBtnLab_Cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnLab_Pesq" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Incluir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnLab_Alterar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
           </Group>
@@ -310,7 +297,7 @@
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnLab_Incluir1">
+    <Component class="javax.swing.JButton" name="jBtnLab_Incluir">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/imagens/botao-adicionar.png"/>
@@ -318,7 +305,7 @@
         <Property name="text" type="java.lang.String" value="Incluir"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_Incluir1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnLab_IncluirActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBtnLab_Alterar">

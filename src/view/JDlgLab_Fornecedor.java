@@ -55,7 +55,6 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBtnLab_Incluir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -84,21 +83,13 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
         jLabel14 = new javax.swing.JLabel();
         jTxtLab_formasPagamento = new javax.swing.JTextField();
         jChbLab_ativo = new javax.swing.JCheckBox();
-        jBtnLab_Incluir1 = new javax.swing.JButton();
+        jBtnLab_Incluir = new javax.swing.JButton();
         jBtnLab_Alterar = new javax.swing.JButton();
         jBtnLab_Excluir = new javax.swing.JButton();
         jBtnLab_Confirmar = new javax.swing.JButton();
         jBtnLab_Cancelar = new javax.swing.JButton();
         jBtnLab_Pesq = new javax.swing.JButton();
         jFmtLab_cnpj = new javax.swing.JFormattedTextField();
-
-        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
-        jBtnLab_Incluir.setText("Incluir");
-        jBtnLab_Incluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnLab_IncluirActionPerformed(evt);
-            }
-        });
 
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -136,11 +127,11 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
 
         jChbLab_ativo.setText("Ativo");
 
-        jBtnLab_Incluir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
-        jBtnLab_Incluir1.setText("Incluir");
-        jBtnLab_Incluir1.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
+        jBtnLab_Incluir.setText("Incluir");
+        jBtnLab_Incluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnLab_Incluir1ActionPerformed(evt);
+                jBtnLab_IncluirActionPerformed(evt);
             }
         });
 
@@ -242,7 +233,8 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
                                     .addComponent(jTxtLab_nomeEmpresa)
                                     .addComponent(jFmtLab_cnpj)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnLab_Incluir1)
+                        .addGap(12, 12, 12)
+                        .addComponent(jBtnLab_Incluir)
                         .addGap(18, 18, 18)
                         .addComponent(jBtnLab_Alterar)
                         .addGap(18, 18, 18)
@@ -262,8 +254,7 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addComponent(jTxtLab_telefoneContato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE))
+                        .addComponent(jTxtLab_telefoneContato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -286,8 +277,8 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jTxtLab_endereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)))
+                                    .addComponent(jLabel2))))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel7)
@@ -315,12 +306,12 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
                     .addComponent(jChbLab_ativo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnLab_Incluir1)
-                    .addComponent(jBtnLab_Alterar)
                     .addComponent(jBtnLab_Excluir)
                     .addComponent(jBtnLab_Confirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jBtnLab_Cancelar)
-                    .addComponent(jBtnLab_Pesq))
+                    .addComponent(jBtnLab_Pesq)
+                    .addComponent(jBtnLab_Incluir)
+                    .addComponent(jBtnLab_Alterar))
                 .addGap(31, 31, 31))
         );
 
@@ -335,14 +326,9 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
         dispose();
     }//GEN-LAST:event_closeDialog
 
-    private void jBtnLab_IncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_IncluirActionPerformed
-        // TODO add your handling code here:
-        habilitar(false);
-    }//GEN-LAST:event_jBtnLab_IncluirActionPerformed
-
     private void jBtnLab_AlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_AlterarActionPerformed
         // TODO add your handling code here:
-        habilitar(true);
+       habilitar(true);
     }//GEN-LAST:event_jBtnLab_AlterarActionPerformed
 
     private void jBtnLab_ExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_ExcluirActionPerformed
@@ -366,10 +352,10 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
         JOptionPane.showInputDialog(null, "Informe o código do Fornecedor:");
     }//GEN-LAST:event_jBtnLab_PesqActionPerformed
 
-    private void jBtnLab_Incluir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_Incluir1ActionPerformed
+    private void jBtnLab_IncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLab_IncluirActionPerformed
         // TODO add your handling code here:
-         habilitar(true);
-    }//GEN-LAST:event_jBtnLab_Incluir1ActionPerformed
+        habilitar(true);
+    }//GEN-LAST:event_jBtnLab_IncluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -395,7 +381,6 @@ public class JDlgLab_Fornecedor extends java.awt.Dialog {
     private javax.swing.JButton jBtnLab_Confirmar;
     private javax.swing.JButton jBtnLab_Excluir;
     private javax.swing.JButton jBtnLab_Incluir;
-    private javax.swing.JButton jBtnLab_Incluir1;
     private javax.swing.JButton jBtnLab_Pesq;
     private javax.swing.JCheckBox jChbLab_ativo;
     private javax.swing.JFormattedTextField jFmtLab_cnpj;

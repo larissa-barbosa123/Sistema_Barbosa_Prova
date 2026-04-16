@@ -41,9 +41,7 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Sair = new javax.swing.JMenuItem();
         jMnuLab_Movimento = new javax.swing.JMenu();
         jMnuLab_Compras = new javax.swing.JMenuItem();
-        jMnuLab_ComprasProdutos = new javax.swing.JMenuItem();
         jMnuLab_Vendas = new javax.swing.JMenuItem();
-        jMnuLab_VendasProdutos = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -105,6 +103,11 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Vendedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLab_Vendedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendedor.png"))); // NOI18N
         jMnuLab_Vendedores.setText("Vendedores");
+        jMnuLab_Vendedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMnuLab_VendedoresActionPerformed(evt);
+            }
+        });
         jMnuLab_Cadastros.add(jMnuLab_Vendedores);
         jMnuLab_Cadastros.add(jSeparator1);
 
@@ -127,20 +130,10 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
         jMnuLab_Compras.setText("Compras");
         jMnuLab_Movimento.add(jMnuLab_Compras);
 
-        jMnuLab_ComprasProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuLab_ComprasProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/compras_produtos.png"))); // NOI18N
-        jMnuLab_ComprasProdutos.setText("Compras_Produtos");
-        jMnuLab_Movimento.add(jMnuLab_ComprasProdutos);
-
         jMnuLab_Vendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         jMnuLab_Vendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/vendas.png"))); // NOI18N
         jMnuLab_Vendas.setText("Vendas");
         jMnuLab_Movimento.add(jMnuLab_Vendas);
-
-        jMnuLab_VendasProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuLab_VendasProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/venda_produto.png"))); // NOI18N
-        jMnuLab_VendasProdutos.setText("Vendas_Produtos");
-        jMnuLab_Movimento.add(jMnuLab_VendasProdutos);
 
         jMenuBar1.add(jMnuLab_Movimento);
 
@@ -189,6 +182,12 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
        jDlgLab_Produtos.setVisible(true);
     }//GEN-LAST:event_jMnuLab_ProdutosActionPerformed
 
+    private void jMnuLab_VendedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuLab_VendedoresActionPerformed
+        // TODO add your handling code here:
+        JDlgLab_Vendedores jDlgLab_Vendedores  = new JDlgLab_Vendedores (null, true);
+       jDlgLab_Vendedores .setVisible(true);
+    }//GEN-LAST:event_jMnuLab_VendedoresActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -232,14 +231,12 @@ public class JFrmLab_Principal extends javax.swing.JFrame {
     private javax.swing.JMenu jMnuLab_Cadastros;
     private javax.swing.JMenuItem jMnuLab_Clientes;
     private javax.swing.JMenuItem jMnuLab_Compras;
-    private javax.swing.JMenuItem jMnuLab_ComprasProdutos;
     private javax.swing.JMenuItem jMnuLab_Fornecedor;
     private javax.swing.JMenu jMnuLab_Movimento;
     private javax.swing.JMenuItem jMnuLab_Produtos;
     private javax.swing.JMenuItem jMnuLab_Sair;
     private javax.swing.JMenuItem jMnuLab_Usuarios;
     private javax.swing.JMenuItem jMnuLab_Vendas;
-    private javax.swing.JMenuItem jMnuLab_VendasProdutos;
     private javax.swing.JMenuItem jMnuLab_Vendedores;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
