@@ -133,11 +133,6 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
         jLabel14.setText("Endereço:");
 
         jChbLab_ativo.setText("Ativo");
-        jChbLab_ativo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jChbLab_ativoActionPerformed(evt);
-            }
-        });
 
         jBtnLab_Incluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/botao-adicionar.png"))); // NOI18N
         jBtnLab_Incluir.setText("Incluir");
@@ -358,10 +353,6 @@ public class JDlgLab_Clientes extends javax.swing.JDialog {
         // TODO add your handling code here:
         JOptionPane.showInputDialog(null, "Informe o código do Cliente:");
     }//GEN-LAST:event_jBtnLab_PesqActionPerformed
-
-    private void jChbLab_ativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChbLab_ativoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jChbLab_ativoActionPerformed
 
     /**
      * @param args the command line arguments

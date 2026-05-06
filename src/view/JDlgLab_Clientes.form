@@ -282,9 +282,6 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ativo"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jChbLab_ativoActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtLab_Nome">
     </Component>
