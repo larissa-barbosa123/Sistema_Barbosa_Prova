@@ -4,49 +4,50 @@
  */
 package dao;
 
-import bean.MpvUsuarios;
+import bean.LabUsuarios;
+import dao.DaoLabAbstract;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import testes.JdbcCrud;
+import testes.JdbcLabCrud;
 
 
 /**
  *
  * @author u07862281136
  */
-public class DaoLabUsuarios extends DaoAbstract {
+public class DaoLabUsuarios extends DaoLabAbstract {
     
-    @Override
+   @Override
     public void insert(Object object) {
-        LabUsuarios labUsuarios = (LabUsuarios) object;
+        LabUsuarios mpvUsuarios = (LabUsuarios) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
             url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
             user = "larissa_barbosa";
-            cnt = DriverManager.getConnection(url, use
             password = "larissa_barbosa";
-            Connection cnt;r, password);
-            String sql = "insert into mpv_usuarios values (?,?,?,?,?,?,?,?)";
+            Connection cnt;
+            cnt = DriverManager.getConnection(url, user, password);
+            String sql = "insert into lab_usuarios values (?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement( sql );
-            pst.setInt(1, mpvUsuarios.getMpvIdUsuarios());
-            pst.setString(2, mpvUsuarios.getMpvNome());
-            pst.setString(3, mpvUsuarios.getMpvApelido());
-            pst.setString(4, mpvUsuarios.getMpvCpf());
+            pst.setInt(1, mpvUsuarios.getLabIdUsuarios());
+            pst.setString(2, mpvUsuarios.getLabNome());
+            pst.setString(3, mpvUsuarios.getLabApelido());
+            pst.setString(4, mpvUsuarios.getLabCpf());
             pst.setDate(5, null);
-            pst.setInt(6, mpvUsuarios.getMpvNivel());
-            pst.setString(7, mpvUsuarios.getMpvSenha());
-            pst.setString(8, mpvUsuarios.getMpvAtivo());
+            pst.setInt(6, mpvUsuarios.getLabNivel());
+            pst.setString(7, mpvUsuarios.getLabSenha());
+            pst.setString(8, mpvUsuarios.getLabAtivo());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -56,7 +57,7 @@ public class DaoLabUsuarios extends DaoAbstract {
 
     @Override
     public void delete(Object object) {
-        MpvUsuarios mpvUsuarios = (MpvUsuarios) object;
+        LabUsuarios mpvUsuarios = (LabUsuarios) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
@@ -67,13 +68,13 @@ public class DaoLabUsuarios extends DaoAbstract {
             cnt = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = cnt.prepareStatement(
                     "delete from  mpv_usuarios where id_mpvusuarios=?");
-            pst.setInt(1, mpvUsuarios.getMpvIdUsuarios());
+            pst.setInt(1, mpvUsuarios.getLabIdUsuarios());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -81,14 +82,12 @@ public class DaoLabUsuarios extends DaoAbstract {
     public Object list(int id) {
 
         return null;
-
     }
 
     @Override
     public Object listAll() {
 
         return null;
-
     }
 
 }

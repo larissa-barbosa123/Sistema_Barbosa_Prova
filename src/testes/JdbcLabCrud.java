@@ -6,8 +6,8 @@ package testes;
 
 /**
  *
- * @author u07862281136
+ * @author tizzy
  */
-public class JdbcCrud {
+public class JdbcLabCrud {
     
 }
