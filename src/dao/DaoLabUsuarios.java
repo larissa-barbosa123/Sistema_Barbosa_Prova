@@ -11,14 +11,14 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import testes.JdbcCrud;
+import testes.JdbcLabCrud;
 
 
 /**
  *
  * @author u07862281136
  */
-public class DaoLabUsuarios extends DaoAbstract {
+public class DaoLabUsuarios extends DaoLabAbstract {
     
    @Override
     public void insert(Object object) {
@@ -44,9 +44,9 @@ public class DaoLabUsuarios extends DaoAbstract {
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -71,9 +71,9 @@ public class DaoLabUsuarios extends DaoAbstract {
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

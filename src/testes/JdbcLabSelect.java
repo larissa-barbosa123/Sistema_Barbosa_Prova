@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  *
  * @author u07862281136
  */
-public class JdbcSelect {
+public class JdbcLabSelect {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
@@ -46,9 +46,9 @@ public class JdbcSelect {
             cnt.close();
             
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcSelect.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabSelect.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcSelect.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabSelect.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         System.out.println("Executou");
