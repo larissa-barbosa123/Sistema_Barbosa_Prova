@@ -5,7 +5,6 @@
 package bean;
 
 import java.util.Date;
-import java.math.BigDecimal;
 
 
 /**
@@ -19,7 +18,7 @@ public class LabVendedores {
     private String labEmail;   
     private String labUsuarioSistema;
     private int labSenhaSistema;
-    private BigDecimal labMetaVendas;
+    private double labMetaVendas;
     private String labAtivo;
     private Date labDataCadastro;
 
@@ -133,5 +132,19 @@ public class LabVendedores {
      */
     public void setLabDataCadastro(Date labDataCadastro) {
         this.labDataCadastro = labDataCadastro;
+    }
+
+    /**
+     * @return the labMetaVendas
+     */
+    public double getLabMetaVendas() {
+        return labMetaVendas;
+    }
+
+    /**
+     * @param labMetaVendas the labMetaVendas to set
+     */
+    public void setLabMetaVendas(double labMetaVendas) {
+        this.labMetaVendas = labMetaVendas;
     }
 }

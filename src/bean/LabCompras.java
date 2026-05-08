@@ -4,7 +4,7 @@
  */
 package bean;
 
-import java.math.BigDecimal;
+
 import java.util.Date;
 
 /**
@@ -17,7 +17,7 @@ public class LabCompras {
     private int labFornecedor;
     private String labUsuario;
     private String labNumeroNota;
-    private BigDecimal labTotal;
+    private double labTotal;
 
     /**
      * @return the labIdCompras
@@ -92,14 +92,14 @@ public class LabCompras {
     /**
      * @return the labTotal
      */
-    public BigDecimal getLabTotal() {
+    public double getLabTotal() {
         return labTotal;
     }
 
     /**
      * @param labTotal the labTotal to set
      */
-    public void setLabTotal(BigDecimal labTotal) {
+    public void setLabTotal(double labTotal) {
         this.labTotal = labTotal;
     }
 }

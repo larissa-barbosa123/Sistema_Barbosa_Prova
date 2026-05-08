@@ -4,7 +4,7 @@
  */
 package bean;
 
-import java.math.BigDecimal;
+
 
 /**
  *
@@ -15,8 +15,8 @@ public class LabComprasProdutos {
     private int labCompra;
     private int labProduto;
     private int labQuantidade;
-    private BigDecimal labValorUnitario;
-    private BigDecimal labSubTotal;
+    private double labValorUnitario;
+    private double  labSubTotal;
 
     /**
      * @return the labIdCompraProduto
@@ -77,28 +77,28 @@ public class LabComprasProdutos {
     /**
      * @return the labValorUnitario
      */
-    public BigDecimal getLabValorUnitario() {
+    public double getLabValorUnitario() {
         return labValorUnitario;
     }
 
     /**
      * @param labValorUnitario the labValorUnitario to set
      */
-    public void setLabValorUnitario(BigDecimal labValorUnitario) {
+    public void setLabValorUnitario(double labValorUnitario) {
         this.labValorUnitario = labValorUnitario;
     }
 
     /**
      * @return the labSubTotal
      */
-    public BigDecimal getLabSubTotal() {
+    public double getLabSubTotal() {
         return labSubTotal;
     }
 
     /**
      * @param labSubTotal the labSubTotal to set
      */
-    public void setLabSubTotal(BigDecimal labSubTotal) {
+    public void setLabSubTotal(double labSubTotal) {
         this.labSubTotal = labSubTotal;
     }
 }

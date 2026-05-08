@@ -23,25 +23,25 @@ public class DaoLabUsuarios extends DaoLabAbstract {
     
    @Override
     public void insert(Object object) {
-        LabUsuarios mpvUsuarios = (LabUsuarios) object;
+        LabUsuarios labUsuarios = (LabUsuarios) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url, user, password;
-            url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
-            user = "larissa_barbosa";
-            password = "larissa_barbosa";
-            Connection cnt;
-            cnt = DriverManager.getConnection(url, user, password);
+            String url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
+            String user = "larissa_barbosa";
+            String password = "larissa_barbosa";
+            Connection cnt = DriverManager.getConnection(url, user, password);
+            
             String sql = "insert into lab_usuarios values (?,?,?,?,?,?,?,?)";
-            PreparedStatement pst = cnt.prepareStatement( sql );
-            pst.setInt(1, mpvUsuarios.getLabIdUsuarios());
-            pst.setString(2, mpvUsuarios.getLabNome());
-            pst.setString(3, mpvUsuarios.getLabApelido());
-            pst.setString(4, mpvUsuarios.getLabCpf());
+            PreparedStatement pst = cnt.prepareStatement(sql);
+            
+            pst.setInt(1, labUsuarios.getLabIdUsuario());
+            pst.setString(2, labUsuarios.getLabNome());
+            pst.setString(3, labUsuarios.getLabApelido());
+            pst.setString(4, labUsuarios.getLabCpf());
             pst.setDate(5, null);
-            pst.setInt(6, mpvUsuarios.getLabNivel());
-            pst.setString(7, mpvUsuarios.getLabSenha());
-            pst.setString(8, mpvUsuarios.getLabAtivo());
+            pst.setInt(6, labUsuarios.getLabNivel());
+            pst.setString(7, labUsuarios.getLabSenha());
+            pst.setString(8, labUsuarios.getLabAtivo());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
@@ -57,18 +57,18 @@ public class DaoLabUsuarios extends DaoLabAbstract {
 
     @Override
     public void delete(Object object) {
-        LabUsuarios mpvUsuarios = (LabUsuarios) object;
+       LabUsuarios labUsuarios = (LabUsuarios) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
-            url = "jdbc:mysql://10.7.0.51:33062/db_marcos_vilhanueva";
-            user = "marcos_vilhanueva";
-            password = "marcos_vilhanueva";
+            url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
+            user = "larissa_barbosa";
+            password = "larissa_barbosa";
             Connection cnt;
             cnt = DriverManager.getConnection(url, user, password);
             PreparedStatement pst = cnt.prepareStatement(
-                    "delete from  mpv_usuarios where id_mpvusuarios=?");
-            pst.setInt(1, mpvUsuarios.getLabIdUsuarios());
+                    "delete from lab_usuarios where id_labusuarios=?");
+            pst.setInt(1, labUsuarios.getLabIdUsuario());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {

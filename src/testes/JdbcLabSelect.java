@@ -4,23 +4,25 @@
  */
 package testes;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.sql.PreparedStatement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
- * @author tizzy
+ * @author u07862281136
  */
-public class JdbcLabCrud {
-     public static void main(String[] args) {
+public class JdbcLabSelect {
+    public static void main(String[] args) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url, user, password;
+           
             url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
             user = "larissa_barbosa";
             password = "larissa_barbosa";
@@ -28,27 +30,23 @@ public class JdbcLabCrud {
             Connection cnt;
             cnt = DriverManager.getConnection(url, user, password);
             Statement stm = cnt.createStatement();
-
-            //stm.executeUpdate("insert into lab_usuarios(lab_idusuarios, lab_nome, lab_apelido, lab_cpf) values(508, 'larissa', 'barbosa', '534535345')");
-
-            PreparedStatement pst = cnt.prepareStatement("insert into lab_usuarios"
-                    + "(lab_idusuarios,lab_nome,lab_apelido, lab_cpf) values(?,?,?,?)");
-
-            pst.setInt(1, 508);
-            pst.setString(2, "larissa");
-            pst.setString(3, "barbosa");
-            pst.setString(4, "2354253453");
-            pst.executeUpdate();
            
-
+            PreparedStatement pst = cnt.prepareStatement("select * from lab_usuarios");
+           
+            ResultSet rs = pst.executeQuery();
+           
+            while (rs.next() == true) {
+                System.out.println("nome: " + rs.getString("lab_nome"));
+                System.out.println("cpf: " + rs.getString("lab_cpf"));
+            }
+           
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabSelect.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(JdbcLabCrud.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(JdbcLabSelect.class.getName()).log(Level.SEVERE, null, ex);
         }
-           
-         
        
         System.out.println("Executou");
     }
 }
+
