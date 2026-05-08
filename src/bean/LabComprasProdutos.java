@@ -11,7 +11,7 @@ package bean;
  * @author tizzy
  */
 public class LabComprasProdutos {
-     private int labIdCompraProduto;
+     private int labIdComprasProdutos;
     private int labCompra;
     private int labProduto;
     private int labQuantidade;
@@ -19,17 +19,17 @@ public class LabComprasProdutos {
     private double  labSubTotal;
 
     /**
-     * @return the labIdCompraProduto
+     * @return the labIdComprasProdutos
      */
-    public int getLabIdCompraProduto() {
-        return labIdCompraProduto;
+    public int getLabIdComprasProdutos() {
+        return labIdComprasProdutos;
     }
 
     /**
-     * @param labIdCompraProduto the labIdCompraProduto to set
+     * @param labIdComprasProdutos the labIdCompraProdutos to set
      */
-    public void setLabIdCompraProduto(int labIdCompraProduto) {
-        this.labIdCompraProduto = labIdCompraProduto;
+    public void setLabIdCompraProdutos(int labIdComprasProdutos) {
+        this.labIdComprasProdutos = labIdComprasProdutos;
     }
 
     /**

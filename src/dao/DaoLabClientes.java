@@ -4,26 +4,23 @@
  */
 package dao;
 
-import bean.LabUsuarios;
-import dao.DaoLabAbstract;
+import bean.LabClientes;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import testes.JdbcLabCrud;
-
+import testes.JdbcLabCrud; 
 
 /**
  *
- * @author u07862281136
+ * @author tizzy
  */
-public class DaoLabUsuarios extends DaoLabAbstract {
-    
-   @Override
+public class DaoLabClientes extends DaoLabAbstract {
+    @Override
     public void insert(Object object) {
-        LabUsuarios labUsuarios = (LabUsuarios) object;
+        LabClientes labClientes = (LabClientes) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
@@ -31,17 +28,24 @@ public class DaoLabUsuarios extends DaoLabAbstract {
             String password = "larissa_barbosa";
             Connection cnt = DriverManager.getConnection(url, user, password);
             
-            String sql = "insert into lab_usuarios values (?,?,?,?,?,?,?,?)";
+            String sql = "insert into lab_Clientes values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             
-            pst.setInt(1, labUsuarios.getLabIdUsuario());
-            pst.setString(2, labUsuarios.getLabNome());
-            pst.setString(3, labUsuarios.getLabApelido());
-            pst.setString(4, labUsuarios.getLabCpf());
-            pst.setDate(5, null);
-            pst.setInt(6, labUsuarios.getLabNivel());
-            pst.setString(7, labUsuarios.getLabSenha());
-            pst.setString(8, labUsuarios.getLabAtivo());
+            pst.setInt(1, labClientes.getLabIdClientes());
+            pst.setString(2, labClientes.getLabNome());
+            pst.setString(3, labClientes.getLabCpf());
+            pst.setDate(4, null); // labDataNascimento
+            pst.setString(5, labClientes.getLabTelefone());
+            pst.setString(5, labClientes.getLabCelular());
+            pst.setString(7, labClientes.getLabEmail());
+            pst.setString(8, labClientes.getLabEndereco());
+            pst.setString(9, labClientes.getLabNumero());
+            pst.setString(10, labClientes.getLabBairro());
+            pst.setString(11, labClientes.getLabCidade());
+            pst.setString(12, labClientes.getLabEstado());
+            pst.setString(13, labClientes.getLabCep());
+             pst.setDate(14, null); // labDataCadastro
+            pst.setString(15, labClientes.getLabAtivo());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
@@ -70,5 +74,4 @@ public class DaoLabUsuarios extends DaoLabAbstract {
 
         return null;
     }
-
 }

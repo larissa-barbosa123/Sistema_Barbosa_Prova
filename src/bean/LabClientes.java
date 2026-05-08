@@ -11,7 +11,7 @@ import java.util.Date;
  * @author tizzy
  */
 public class LabClientes {
-    private int labIdCliente;
+    private int labIdClientes;
     private String labNome;
     private String labCpf;
     private Date labDataNascimento;
@@ -28,17 +28,17 @@ public class LabClientes {
     private String labAtivo;
 
     /**
-     * @return the labIdCliente
+     * @return the labIdClientes
      */
-    public int getLabIdCliente() {
-        return labIdCliente;
+    public int getLabIdClientes() {
+        return labIdClientes;
     }
 
     /**
-     * @param labIdCliente the labIdCliente to set
+     * @param labIdClientes the labIdClientes to set
      */
-    public void setLabIdCliente(int labIdCliente) {
-        this.labIdCliente = labIdCliente;
+    public void setLabIdClientes(int labIdClientes) {
+        this.labIdClientes = labIdClientes;
     }
 
     /**

@@ -4,8 +4,7 @@
  */
 package dao;
 
-import bean.LabUsuarios;
-import dao.DaoLabAbstract;
+import bean.LabVendas;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,16 +13,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import testes.JdbcLabCrud;
 
-
 /**
  *
- * @author u07862281136
+ * @author tizzy
  */
-public class DaoLabUsuarios extends DaoLabAbstract {
-    
-   @Override
+public class DaoLabVendas extends DaoLabAbstract{
+     @Override
     public void insert(Object object) {
-        LabUsuarios labUsuarios = (LabUsuarios) object;
+        LabVendas labVendas = (LabVendas) object;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String url = "jdbc:mysql://10.7.0.51:33062/db_larissa_barbosa";
@@ -31,17 +28,14 @@ public class DaoLabUsuarios extends DaoLabAbstract {
             String password = "larissa_barbosa";
             Connection cnt = DriverManager.getConnection(url, user, password);
             
-            String sql = "insert into lab_usuarios values (?,?,?,?,?,?,?,?)";
+            String sql = "insert into lab_Vendas values (?,?,?,?,?)";
             PreparedStatement pst = cnt.prepareStatement(sql);
             
-            pst.setInt(1, labUsuarios.getLabIdUsuario());
-            pst.setString(2, labUsuarios.getLabNome());
-            pst.setString(3, labUsuarios.getLabApelido());
-            pst.setString(4, labUsuarios.getLabCpf());
-            pst.setDate(5, null);
-            pst.setInt(6, labUsuarios.getLabNivel());
-            pst.setString(7, labUsuarios.getLabSenha());
-            pst.setString(8, labUsuarios.getLabAtivo());
+            pst.setInt(1, labVendas.getLabIdVendas());
+            pst.setDate(2, null);
+            pst.setInt(3, labVendas.getLabCliente());
+            pst.setInt(4, labVendas.getLabUsuario());
+            pst.setDouble(5, labVendas.getLabTotal());
             pst.executeUpdate();
 
         } catch (ClassNotFoundException ex) {
@@ -70,5 +64,4 @@ public class DaoLabUsuarios extends DaoLabAbstract {
 
         return null;
     }
-
 }

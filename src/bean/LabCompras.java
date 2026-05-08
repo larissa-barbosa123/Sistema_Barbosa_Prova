@@ -15,7 +15,7 @@ public class LabCompras {
     private int labIdCompras;
     private Date labDataCompra;
     private int labFornecedor;
-    private String labUsuario;
+    private int labUsuario;
     private String labNumeroNota;
     private double labTotal;
 
@@ -64,14 +64,14 @@ public class LabCompras {
     /**
      * @return the labUsuario
      */
-    public String getLabUsuario() {
+    public int getLabUsuario() {
         return labUsuario;
     }
 
     /**
      * @param labUsuario the labUsuario to set
      */
-    public void setLabUsuario(String labUsuario) {
+    public void setLabUsuario(int labUsuario) {
         this.labUsuario = labUsuario;
     }
 

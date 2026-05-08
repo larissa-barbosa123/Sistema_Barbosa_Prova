@@ -10,7 +10,7 @@ package bean;
  * @author tizzy
  */
 public class LabProdutos {
-    private int labIdProduto;
+    private int labIdProdutos;
     private String labNomeProduto;
     private String labDescricao;
     private String labTipoProduto;
@@ -21,15 +21,15 @@ public class LabProdutos {
     /**
      * @return the labIdProduto
      */
-    public int getLabIdProduto() {
-        return labIdProduto;
+    public int getLabIdProdutos() {
+        return labIdProdutos;
     }
 
     /**
      * @param labIdProduto the labIdProduto to set
      */
-    public void setLabIdProduto(int labIdProduto) {
-        this.labIdProduto = labIdProduto;
+    public void setLabIdProdutos(int labIdProduto) {
+        this.labIdProdutos = labIdProduto;
     }
 
     /**

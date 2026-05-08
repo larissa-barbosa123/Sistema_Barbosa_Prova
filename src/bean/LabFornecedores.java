@@ -9,7 +9,7 @@ package bean;
  * @author tizzy
  */
 public class LabFornecedores {
-    private int labIdUsuarios;
+    private int labIdFornecedor;
     private String labNomeEmpresa;
     private String labResponsavel;
     private String labCnpj;
@@ -27,17 +27,17 @@ public class LabFornecedores {
     private String labAtivo;
 
     /**
-     * @return the labIdUsuarios
+     * @return the labIdFornecedor
      */
-    public int getLabIdUsuarios() {
-        return labIdUsuarios;
+    public int getLabIdFornecedor() {
+        return labIdFornecedor;
     }
 
     /**
-     * @param labIdUsuarios the labIdUsuarios to set
+     * @param labIdFornecedor the labIdFornecedor to set
      */
-    public void setLabIdUsuarios(int labIdUsuarios) {
-        this.labIdUsuarios = labIdUsuarios;
+    public void setLabIdFornecedor(int labIdFornecedor) {
+        this.labIdFornecedor = labIdFornecedor;
     }
 
     /**
