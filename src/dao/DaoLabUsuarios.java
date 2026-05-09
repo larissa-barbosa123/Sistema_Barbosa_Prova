@@ -5,7 +5,6 @@
 package dao;
 
 import bean.LabUsuarios;
-import dao.DaoLabAbstract;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
